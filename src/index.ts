@@ -27,8 +27,8 @@ const SchemaTailscaleCreateAuthKey = z
 
 const run = async () => {
   const tailnet = core.getInput('tailnet', { required: true })
-  const clientId = core.getInput('clientId', { required: true })
-  const clientSecret = core.getInput('clientSecret', {
+  const clientId = core.getInput('client-id', { required: true })
+  const clientSecret = core.getInput('client-secret', {
     required: true
   })
   const tags = core.getMultilineInput('tags', { required: true })
@@ -39,7 +39,9 @@ const run = async () => {
     required: false
   })
 
-  const expirySecondsInput = core.getInput('tags', { required: false })
+  const expirySecondsInput = core.getInput('expiry-seconds', {
+    required: false
+  })
   const expirySeconds = isEmpty(expirySecondsInput)
     ? 3600
     : parseInt(expirySecondsInput, 10)

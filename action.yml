@@ -5,16 +5,16 @@ inputs:
   tailnet:
     description: 'Tailnet name'
     required: true
-  clientId:
+  client-id:
     description: 'OAuth Client Id'
     required: true
-  clientSecret:
+  client-secret:
     description: 'OAuth Client Secret'
     required: true
   tags:
     description: 'At least one tag or a set of tags in your tailnet'
     required: true
-  expirySeconds:
+  expiry-seconds:
     description: 'Duration in seconds the auth key is valid'
     required: false
     default: "3600"
