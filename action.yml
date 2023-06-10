@@ -1,0 +1,38 @@
+name: 'action-tailscale'
+description: 'Creates a new auth key in the specified tailnet using OAuth client ID and secret.'
+author: 'escapace'
+inputs:
+  tailnet:
+    description: 'Tailnet name'
+    required: true
+  clientId:
+    description: 'OAuth Client Id'
+    required: true
+  clientSecret:
+    description: 'OAuth Client Secret'
+    required: true
+  tags:
+    description: 'At least one tag or a set of tags in your tailnet'
+    required: true
+  expirySeconds:
+    description: 'Duration in seconds the auth key is valid'
+    required: false
+    default: "3600"
+  reusable:
+    description: 'Reusable auth keys can be used multiple times to register different devices'
+    required: false
+    default: "false"
+  ephemeral:
+    description: ' ephemeral keys are used to connect and then clean up short-lived devices'
+    required: false
+    default: "true"
+  preauthorized:
+    description: 'Devices registered with this key will not require additional approval'
+    required: false
+    default: "true"
+outputs:
+  authkey:
+    description: 'Key to register new device(s) on the tailnet'
+runs:
+  using: 'node16'
+  main: 'lib/cjs/index.cjs'

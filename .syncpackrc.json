@@ -1,0 +1,39 @@
+{
+  "dependencyTypes": [
+    "dev",
+    "overrides",
+    "peer",
+    "pnpmOverrides",
+    "prod",
+    "resolutions",
+    "workspace",
+    "engines"
+  ],
+  "customTypes": {
+    "engines": {
+      "path": "engines",
+      "strategy": "versionsByName"
+    }
+  },
+  "semverGroups": [
+    {
+      "dependencies": ["**"],
+      "dependencyTypes": ["engines", "peer"],
+      "packages": ["**"],
+      "range": ">="
+    },
+    {
+      "dependencies": ["**"],
+      "dependencyTypes": ["dev"],
+      "packages": ["**"],
+      "range": ""
+    },
+    {
+      "dependencies": ["**"],
+      "dependencyTypes": ["prod"],
+      "packages": ["**"],
+      "range": ""
+    }
+  ],
+  "source": ["package.json"]
+}
