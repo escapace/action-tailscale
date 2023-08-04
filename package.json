@@ -29,7 +29,7 @@
     "is-ci": "3.0.1",
     "lint-staged": "13.2.2",
     "lodash-es": "4.17.21",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "prettier-config-escapace": "1.0.6",
     "semver": "7.5.1",
     "syncpack": "10.5.1",
