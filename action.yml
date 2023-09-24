@@ -34,5 +34,5 @@ outputs:
   authkey:
     description: 'Key to register new device(s) on the tailnet'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'lib/cjs/index.cjs'
