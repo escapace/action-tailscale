@@ -57,7 +57,7 @@
   "license": "MPL-2.0",
   "main": "lib/cjs/index.cjs",
   "private": true,
-  "repository": "escapace/action-tailscale.git",
+  "repository": "escapace/action-tailscale",
   "scripts": {
     "build": "node ./scripts/build.mjs",
     "lint": "ls-lint && eslint 'src/**/*.ts?(x)'",
