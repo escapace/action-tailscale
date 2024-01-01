@@ -93,8 +93,8 @@ devDependencies:
     specifier: 5.3.2
     version: 5.3.2
   undici:
-    specifier: 5.28.0
-    version: 5.28.0
+    specifier: 6.2.1
+    version: 6.2.1
   zod:
     specifier: 3.22.4
     version: 3.22.4
@@ -2922,6 +2922,13 @@ packages:
   /undici@5.28.0:
     resolution: {integrity: sha512-gM12DkXhlAc5+/TPe60iy9P6ETgVfqTuRJ6aQ4w8RYu0MqKuXhaq3/b86GfzDQnNA3NUO6aUNdvevrKH59D0Nw==}
     engines: {node: '>=14.0'}
+    dependencies:
+      '@fastify/busboy': 2.1.0
+    dev: true
+
+  /undici@6.2.1:
+    resolution: {integrity: sha512-7Wa9thEM6/LMnnKtxJHlc8SrTlDmxqJecgz1iy8KlsN0/iskQXOQCuPkrZLXbElPaSw5slFFyKIKXyJ3UtbApw==}
+    engines: {node: '>=18.0'}
     dependencies:
       '@fastify/busboy': 2.1.0
     dev: true
